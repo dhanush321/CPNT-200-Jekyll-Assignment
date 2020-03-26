@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+*{
+  box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+/* --------------------------------------------------------------
+Nav Bar
+---------------------------------------------------------------*/
+nav {
+    width:100vw;
+    height: 100%;
+    background-color: black;
+}
+nav ul{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin:0;
+    height: 100%;
+    
+}
+nav ul li{
+    margin:0ch 6ch 2ch 6ch;
+    padding-right:4em;
+    list-style:none;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top:1em;
+}
+/* --------------------------------------------------------------
+Logo
+---------------------------------------------------------------*/
+.logo a{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    position:absolute;
+}
+nav li a {
+    text-decoration:none;
+    font-family: Open Sans;
+    color: white;
+    margin: 30px;
+
+}
+nav a:hover{
+    color:orange;
+}
+.active {
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+  }
+/* --------------------------------------------------------------
+Hero Image
+---------------------------------------------------------------*/
+.hero {
+    background-image:url('/assets/images/bg.jpg'); 
+    width:100vw;
+    height:86.5vh;
+    background-position:center;
+    background-size: cover;
+}
+.hero h1{
+    padding-top: 200px;
+    color:whitesmoke;
+}
+h1 {
+    margin:auto;
+    font-family: 'Exo', sans-serif;
+    font-size: 4em;
+    color:black;
+    text-align: center;
+}
+/* --------------------------------------------------------------
+Posts
+---------------------------------------------------------------*/
+.blog {
+    width:100vw;
+    padding-bottom: 100px;
+}
+.blog h1 {
+    color: black;
+}
+.blog p {
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 1.5em;
+    margin: 20px 50px 20px 50px;
+    padding-top: 50px;
+}
+.blog ul {
+    display:flex;
+    flex-direction: column;
+    margin:0;
+    height: 100%;
+}
+.blog ul li {
+    list-style:none;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top:1em;
+}
+.blog li a {
+    font-family: Open Sans;
+    color: black;
+}
+.blog li a:hover{
+    color: gray;
+}
+/* --------------------------------------------------------------
+Projects
+---------------------------------------------------------------*/
+.content {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 15px;
+    justify-content: center;
+    padding-bottom: 100px;    
+}
+.content h1{
+    color: black;
+    font-family: 'Exo', sans-serif;
+    grid-column: 1/-1;
+}  
+/* --------------------------------------------------------------
+Movie Collections
+---------------------------------------------------------------*/
+.movies{
+    padding-bottom: 100px;
+}
+.movies h2,p{
+    font-family: 'Exo', sans-serif;
+    margin: 0 50px 0 50px;
+}
+.movies p{
+    font-size: 1rem;
+}
+.movieimg {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+}
+img {
+    width: 100%;
+}
+/* --------------------------------------------------------------
+Contact Form
+---------------------------------------------------------------*/
+figure {
+    background-color: #e6e2d3;
+    border: 1px solid black;
+    border-radius:5px;
+}
+figcaption {
+    font-family: 'Exo', sans-serif;
+    padding: 1rem;
+}
+.form {
+    background-color: white;
+    background-size: cover;
+    width:100vw;
+    height:86.5vh;
+
+}
+.form h1 {
+    color: black;
+    font-family: 'Exo', sans-serif;
+}
+label {
+    font-family: 'Ropa Sans', sans-serif;
+    font-variant: small-caps;
+    color: rgb(104, 46, 46);
+    font-size: 25px;
+    display: flex;
+	width: 50%; 
+    margin:auto;
+}
+input { 
+    display: flex;
+	width: 50%; 
+    margin:auto;
+	border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px; 
+    
+}
+textarea{
+    display: flex;
+	width: 50%; 
+    margin:auto;
+    margin-bottom: 5px;
+	border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    height: 25vh;
+}
+.button {
+    justify-content: center;
+}
+/* --------------------------------------------------------------
+Social Media Icons
+---------------------------------------------------------------*/
+.social {
+    display:flex;
+    padding: .5em;
+    margin:auto;
+    justify-content: center;
+}
+.social i{
+    font-size: 2.5rem;
+     justify-content: space-between;
+}
+/* --------------------------------------------------------------
+Footer
+---------------------------------------------------------------*/
+footer {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    height: 50px;
+    position:fixed;
+    bottom:0;
+}

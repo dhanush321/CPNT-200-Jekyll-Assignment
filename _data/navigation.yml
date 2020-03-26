@@ -1,0 +1,10 @@
+- link: /
+  label: Home
+- link: /posts.html
+  label: Posts
+- link: /projects.html
+  label: Projects
+- link: /movies.html
+  label: Movies
+- link: /contact.html
+  label: Contact
